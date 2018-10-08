@@ -9,3 +9,10 @@ Points about Monte-Carlo:
 2. Epsilon - Epsilon is concerned with how explorative/exploitative an agent is. If we know some action gives high reward, going for it is called exploitative nature. Checking out not so profitable actions to 'explore' is explorative nature. Epsilon if 1, agent will strictly treat all actions with equal probability. 
 
 This code contains constant Alpha decaying Epsilon implementation of Black Jack game  
+
+Aplha Control Monte Carlo:
+Q_new = Q_old + alpha*(G-Q_old)
+
+New Policy ->
+Probabilities for actions with max award = (epsilon/Number of actions) + (1-epsilon)
+Probabilities for other actions = (epsilon/Number of actions)
